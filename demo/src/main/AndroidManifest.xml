@@ -687,9 +687,6 @@
         <activity
             android:name="com.yue.demo.media.RecordVideo"
             android:label="使用MediaRecorder录制视频"/>
-        <activity
-            android:name="com.yue.demo.media.VitamioDemo"
-            android:label="VitamioDemo"/>
 
         <!-- VitamioDemo 写入配置 -->
         <activity

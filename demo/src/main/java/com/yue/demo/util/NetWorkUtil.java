@@ -1,7 +1,5 @@
 package com.yue.demo.util;
 
-import io.vov.vitamio.utils.Log;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -12,6 +10,9 @@ import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
+import android.util.Log;
+
+import com.mob.tools.MobLog;
 
 /**
  * 网咯连接的工具类

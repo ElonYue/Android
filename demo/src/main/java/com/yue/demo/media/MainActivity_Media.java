@@ -66,9 +66,5 @@ public class MainActivity_Media extends RootActivity {
 
 			new DemoInfo(R.string.demo_media_name_recordvideo,
 					R.string.demo_media_title_recordvideo, RecordVideo.class),
-
-			new DemoInfo(R.string.demo_media_name_vitamio,
-					R.string.demo_media_title_vitamio, VitamioDemo.class)
-
 	};
 }
