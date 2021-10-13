@@ -2,11 +2,15 @@ package com.yue.demo.ui;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.yue.demo.R;
 import com.yue.demo.DemoInfo;
@@ -39,9 +43,29 @@ public class MainActivity_UI extends Activity {
                 onListItemClick(index);
             }
         });
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!Settings.canDrawOverlays(this)) {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                        Uri.parse("package:" + getPackageName()));
+                startActivityForResult(intent, 10);
+            }
+        }
         
         startService(new Intent(this, AllService.class));
 
+    }
+
+    @Override
+    protected  void  onActivityResult( int  requestCode,  int  resultCode, Intent data) {
+        if (requestCode == 10) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (!Settings.canDrawOverlays(this)) {
+                    // SYSTEM_ALERT_WINDOW permission not granted...
+                    Toast.makeText(this, "not granted", Toast.LENGTH_SHORT);
+                }
+            }
+        }
     }
 
     protected void onListItemClick(int index) {

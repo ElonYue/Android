@@ -1,8 +1,7 @@
 package com.yue.demo;
 
+import android.app.Activity;
 import android.os.Bundle;
-
-import com.iflytek.android.framework.base.v4.BaseFragmentActivity;
 
 /**
  * @author : chengyue
@@ -11,7 +10,7 @@ import com.iflytek.android.framework.base.v4.BaseFragmentActivity;
  * @createTime : 17/2/21
  * @history : change on v1.0
  */
-public class RootFragmentActivity extends BaseFragmentActivity {
+public class RootFragmentActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
