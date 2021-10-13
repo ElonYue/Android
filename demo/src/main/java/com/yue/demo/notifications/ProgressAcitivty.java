@@ -2,13 +2,14 @@ package com.yue.demo.notifications;
 
 import android.app.Notification;
 import android.os.Bundle;
-import android.support.v4.app.NotificationCompat;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RemoteViews;
 
 import com.yue.demo.R;
+
+import androidx.core.app.NotificationCompat;
 
 public class ProgressAcitivty extends NotificationBaseActivity implements
 		OnClickListener {

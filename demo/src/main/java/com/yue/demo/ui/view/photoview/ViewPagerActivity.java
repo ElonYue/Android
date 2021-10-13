@@ -17,9 +17,6 @@ package com.yue.demo.ui.view.photoview;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MenuItem.OnMenuItemClickListener;
@@ -29,6 +26,10 @@ import android.view.ViewGroup.LayoutParams;
 
 import com.photoview.PhotoView;
 import com.yue.demo.R;
+
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * Lock/Unlock button is added to the ActionBar. Use it to temporarily disable

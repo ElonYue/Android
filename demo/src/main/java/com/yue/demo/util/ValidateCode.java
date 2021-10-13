@@ -1,12 +1,12 @@
 package com.yue.demo.util;
 
-import java.util.Random;
-
 import android.graphics.Bitmap;
+import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Bitmap.Config;
+
+import java.util.Random;
 
 /**
  * @desc: 图形验证码
@@ -80,7 +80,7 @@ public class ValidateCode {
 			drawLine(c, paint);
 		}
 
-		c.save(Canvas.ALL_SAVE_FLAG);// 保存
+		c.save();// 保存
 		c.restore();//
 		return bp;
 	}

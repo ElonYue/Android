@@ -8,8 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationCompat.Builder;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -18,6 +16,8 @@ import android.widget.RemoteViews;
 import android.widget.Toast;
 
 import com.yue.demo.R;
+
+import androidx.core.app.NotificationCompat;
 
 public class CustomActivity extends NotificationBaseActivity implements OnClickListener{
 	/** TAG */
@@ -68,7 +68,7 @@ public class CustomActivity extends NotificationBaseActivity implements OnClickL
 		//设置number
 //		NumberFormat num = NumberFormat.getIntegerInstance();
 //		view_custom.setTextViewText(R.id.tv_custom_num, num.format(this.number));
-		mBuilder = new Builder(this);
+		mBuilder = new NotificationCompat.Builder(this);
 		mBuilder.setContent(view_custom)
 				.setContentIntent(getDefalutIntent(Notification.FLAG_AUTO_CANCEL))
 				.setWhen(System.currentTimeMillis())// 通知产生的时间，会在通知信息里显示
@@ -90,7 +90,7 @@ public class CustomActivity extends NotificationBaseActivity implements OnClickL
 	 * 带按钮的通知栏
 	 */
 	public void showButtonNotify(){
-		NotificationCompat.Builder mBuilder = new Builder(this);
+		NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
 		RemoteViews mRemoteViews = new RemoteViews(getPackageName(), R.layout.notification_view_custom_button);
 		mRemoteViews.setImageViewResource(R.id.custom_song_icon, R.drawable.sing_icon);
 		//API3.0 以上的时候显示按钮，否则消失

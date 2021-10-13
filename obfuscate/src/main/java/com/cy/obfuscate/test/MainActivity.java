@@ -1,11 +1,12 @@
-package com.cy.test;
+package com.cy.obfuscate.test;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 import com.cy.model.Engineer;
 import com.cy.model.Student;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * @author : chengyue
