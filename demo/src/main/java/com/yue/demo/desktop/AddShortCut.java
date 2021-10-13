@@ -47,9 +47,9 @@ public class AddShortCut extends Activity {
 		super.onCreate(savedInstanceState);
 		initView();
 		// 加载动画资源
-		anim = AnimationUtils.loadAnimation(this, R.anim.anim);
+		anim = AnimationUtils.loadAnimation(this, R.animator.anim);
 		anim.setFillAfter(true);
-		reverse = AnimationUtils.loadAnimation(this, R.anim.reverse);
+		reverse = AnimationUtils.loadAnimation(this, R.animator.reverse);
 		reverse.setFillAfter(true);
 
 		shortCut.setOnClickListener(new OnClickListener() {

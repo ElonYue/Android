@@ -1,7 +1,5 @@
 package com.yue.demo.graphics;
 
-import java.lang.reflect.Field;
-
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -15,6 +13,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.yue.demo.R;
+
+import java.lang.reflect.Field;
 
 /**
  * 指定点爆炸
@@ -38,7 +38,7 @@ public class Blast extends Activity {
         bomb = MediaPlayer.create(this, R.raw.bomb);
         myView = new MyView(this);
         // 设置myView用于显示blast动画
-        myView.setBackgroundResource(R.anim.blast);
+        myView.setBackgroundResource(R.animator.blast);
         // 设置myView默认为隐藏
         myView.setVisibility(View.INVISIBLE);
         // 获取动画对象

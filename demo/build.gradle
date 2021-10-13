@@ -1,17 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
-
-
+    compileSdkVersion rootProject.android.compileSdkVersion
+    useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.yue.demo"
-        minSdkVersion 15
-        targetSdkVersion 19
+        minSdkVersion rootProject.android.minSdkVersion
+        targetSdkVersion rootProject.android.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        multiDexEnabled true
+//        multiDexEnabled true
     }
 
 //    sourceSets {
@@ -45,5 +43,5 @@ repositories {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:support-v4:21.0.3'
+    compile "com.android.support:support-v4:$rootProject.android.supportLibraryVersion"
 }

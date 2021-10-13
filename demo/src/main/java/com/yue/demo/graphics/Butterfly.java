@@ -47,7 +47,7 @@ public class Butterfly extends Activity {
 
         final ImageView imageView = new ImageView(this);
         imageView.setLayoutParams(MainActivity.layoutParams_ww);
-        imageView.setBackgroundResource(R.anim.butterfly);
+        imageView.setBackgroundResource(R.drawable.butterfly);
         ll.addView(imageView);
 
         setContentView(ll);

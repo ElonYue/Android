@@ -1,7 +1,5 @@
 package com.yue.demo.graphics;
 
-import java.util.ArrayList;
-
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
 import android.animation.AnimatorInflater;
@@ -26,10 +24,12 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.LinearLayout;
 
-import com.yue.demo.R;
 import com.yue.demo.MainActivity;
+import com.yue.demo.R;
 import com.yue.demo.graphics.view.ShapeHolder;
 import com.yue.demo.util.LogUtil;
+
+import java.util.ArrayList;
 
 /**
  * 小球下落
@@ -69,7 +69,7 @@ public class AnimatorTest extends Activity {
             // setBackgroundColor(Color.WHITE);
 
             ObjectAnimator colorAnimator = (ObjectAnimator) AnimatorInflater
-                    .loadAnimator(context, R.anim.color_anim);
+                    .loadAnimator(context, R.animator.color_anim);
 
             colorAnimator.setEvaluator(new ArgbEvaluator());
             // 对该View本身应用属性动画

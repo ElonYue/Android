@@ -1,8 +1,5 @@
 package com.yue.demo.res;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.app.Activity;
 import android.graphics.drawable.ClipDrawable;
 import android.os.Bundle;
@@ -19,6 +16,9 @@ import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
 import com.yue.demo.R;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * 
@@ -151,7 +151,7 @@ public class DrawableTest extends Activity {
                     @Override
                     public void onClick(View v) {
                         Animation anim = AnimationUtils.loadAnimation(
-                                DrawableTest.this, R.anim.my_anim);
+                                DrawableTest.this, R.animator.my_anim);
                         // 设置动画结束后保留结束状态
                         // anim.setFillAfter(true);
                         // 设置动画结束后保留开始状态

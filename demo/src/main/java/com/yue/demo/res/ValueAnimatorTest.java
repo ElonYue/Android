@@ -43,7 +43,7 @@ public class ValueAnimatorTest extends Activity {
             super(context);
             // 加载动画资源
             ObjectAnimator objectAnimator = (ObjectAnimator) AnimatorInflater
-                    .loadAnimator(getContext(), R.anim.color_anim);
+                    .loadAnimator(getContext(), R.animator.color_anim);
             objectAnimator.setEvaluator(new ArgbEvaluator());
             // 对该View本身应用属性动画
             objectAnimator.setTarget(this);

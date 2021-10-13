@@ -44,7 +44,7 @@ public class AnimationDrawableTest extends Activity {
 
         ImageView imageView = new ImageView(this);
         imageView.setLayoutParams(MainActivity.layoutParams_ww);
-        imageView.setBackgroundResource(R.anim.animationdrawable);
+        imageView.setBackgroundResource(R.drawable.animationdrawable);
         ll.addView(imageView);
 
         setContentView(ll);

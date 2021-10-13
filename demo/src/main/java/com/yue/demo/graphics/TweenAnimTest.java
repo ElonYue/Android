@@ -1,8 +1,5 @@
 package com.yue.demo.graphics;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,8 +14,8 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 
-import com.yue.demo.R;
 import com.yue.demo.MainActivity;
+import com.yue.demo.R;
 
 /**
  * 补间动画
@@ -50,14 +47,14 @@ public class TweenAnimTest extends Activity {
         setContentView(ll);
 
         final Animation anim = AnimationUtils.loadAnimation(this,
-                R.anim.tween_anim);
+                R.animator.tween_anim);
         // 设置动画结束后保留结束状态
         anim.setFillAfter(true);
         // 加载第二份动画资源
         final Animation reverse = AnimationUtils.loadAnimation(this,
-                R.anim.tween_anim_reverse);
+                R.animator.tween_anim_reverse);
         final Animation down = AnimationUtils.loadAnimation(this,
-        		R.anim.art_down);
+        		R.animator.art_down);
         // 设置动画结束后保留结束状态
         reverse.setFillAfter(true);
         final Handler handler = new Handler() {
