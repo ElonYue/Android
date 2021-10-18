@@ -1,4 +1,4 @@
-package com.yue.demo.customview;
+package com.yue.demo.ui.view.customview;
 
 public interface OnRearrangeListener {
 	

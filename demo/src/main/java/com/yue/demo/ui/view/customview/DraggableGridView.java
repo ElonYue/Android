@@ -3,7 +3,7 @@
 // - improve timer performance (especially on Eee Pad)
 // - improve child rearranging
 
-package com.yue.demo.customview;
+package com.yue.demo.ui.view.customview;
 
 import java.util.Collections;
 import java.util.ArrayList;

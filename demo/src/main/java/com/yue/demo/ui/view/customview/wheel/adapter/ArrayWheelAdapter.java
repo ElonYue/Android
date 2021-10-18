@@ -13,54 +13,51 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-
-package com.yue.demo.customview.wheel.adapter;
-
-import com.yue.demo.customview.wheel.widget.WheelAdapter;
+package com.yue.demo.ui.view.customview.wheel.adapter;
 
 import android.content.Context;
 
 /**
- * Adapter class for old wheel adapter (deprecated WheelAdapter class).
+ * The simple Array wheel adapter
  * 
- * @deprecated Will be removed soon
+ * @param <T>
+ *            the element type
  */
-public class AdapterWheel extends AbstractWheelTextAdapter {
+public class ArrayWheelAdapter<T> extends AbstractWheelTextAdapter {
 
-	// Source adapter
-	private WheelAdapter adapter;
+	// items
+	private T items[];
 
 	/**
 	 * Constructor
 	 * 
 	 * @param context
 	 *            the current context
-	 * @param adapter
-	 *            the source adapter
+	 * @param items
+	 *            the items
 	 */
-	public AdapterWheel(Context context, WheelAdapter adapter) {
+	public ArrayWheelAdapter(Context context, T items[]) {
 		super(context);
 
-		this.adapter = adapter;
+		// setEmptyItemResource(TEXT_VIEW_ITEM_RESOURCE);
+		this.items = items;
 	}
 
-	/**
-	 * Gets original adapter
-	 * 
-	 * @return the original adapter
-	 */
-	public WheelAdapter getAdapter() {
-		return adapter;
+	@Override
+	public CharSequence getItemText(int index) {
+		if (index >= 0 && index < items.length) {
+			T item = items[index];
+			if (item instanceof CharSequence) {
+				return (CharSequence) item;
+			}
+			return item.toString();
+		}
+		return null;
 	}
 
 	@Override
 	public int getItemsCount() {
-		return adapter.getItemsCount();
-	}
-
-	@Override
-	protected CharSequence getItemText(int index) {
-		return adapter.getItem(index);
+		return items.length;
 	}
 
 }

@@ -1,6 +1,6 @@
 package com.yue.demo.ui.view;
 
-import com.yue.demo.customview.TouchImageView;
+import com.yue.demo.ui.view.customview.TouchImageView;
 
 import android.app.Activity;
 import android.os.Bundle;

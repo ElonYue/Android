@@ -17,11 +17,10 @@ import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import com.yue.demo.R;
-import com.yue.demo.customview.DraggableGridView;
-import com.yue.demo.customview.OnRearrangeListener;
+import com.yue.demo.ui.view.customview.DraggableGridView;
+import com.yue.demo.ui.view.customview.OnRearrangeListener;
 
 public class DraggableGridViewSampleActivity extends Activity {
 	static Random random = new Random();

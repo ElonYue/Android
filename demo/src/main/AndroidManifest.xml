@@ -80,15 +80,22 @@
 
         <!-- app入口 -->
         <activity
-            android:name="com.yue.demo.MainActivity"
-            android:label="@string/app_name">
+            android:name="com.yue.demo.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <!-- other activity -->
+        <activity
+            android:name="com.yue.demo.MainActivity"
+            android:label="首页">
+        </activity>
         <!-- other activity -->
         <activity
             android:name="com.yue.demo.other.MainActivity_other"

@@ -1,4 +1,4 @@
-package com.yue.demo.customview.wheel.adapter;
+package com.yue.demo.ui.view.customview.wheel.adapter;
 
 import android.content.Context;
 import android.content.res.ColorStateList;

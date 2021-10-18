@@ -17,7 +17,7 @@
  *  limitations under the License.
  */
 
-package com.yue.demo.customview.wheel.widget;
+package com.yue.demo.ui.view.customview.wheel.widget;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -37,7 +37,7 @@ import android.view.animation.Interpolator;
 import android.widget.LinearLayout;
 
 import com.yue.demo.R;
-import com.yue.demo.customview.wheel.adapter.WheelViewAdapter;
+import com.yue.demo.ui.view.customview.wheel.adapter.WheelViewAdapter;
 
 /**
  * Numeric wheel view.

@@ -1,4 +1,4 @@
-package com.yue.demo.customview;
+package com.yue.demo.ui.view.customview;
 
 import android.app.Activity;
 import android.graphics.Bitmap;

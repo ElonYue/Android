@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <Button
         android:layout_width="wrap_content"
@@ -50,5 +50,28 @@
         android:shadowRadius="2"
         android:text="文字带阴影的按钮"
         android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <com.yue.demo.ui.view.customview.HalfCircleProgressView
+            android:id="@+id/progress"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="#FF0000" />
+
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+    </LinearLayout>
 
 </LinearLayout>

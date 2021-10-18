@@ -3,6 +3,7 @@ package com.yue.demo.base;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.res.Configuration;
+import android.os.Debug;
 
 import com.iflytek.android.framework.base.BaseApplication;
 import com.yue.demo.util.LogUtil;
@@ -13,9 +14,11 @@ public class MyApplication extends BaseApplication {
 	@Override
 	public void onCreate() {
 		super.onCreate();
+		Debug.startMethodTracing("AndroidDemo");
 		mContext = this.getApplicationContext();
 		// 初始化日志开关
 		LogUtil.setDebugMode(true);
+		Debug.stopMethodTracing();
 	}
 
 	@Override

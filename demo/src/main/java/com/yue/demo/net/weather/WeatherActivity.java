@@ -18,8 +18,7 @@ import android.widget.TextView;
 
 import com.iflytek.android.framework.annotation.ViewInject;
 import com.yue.demo.R;
-import com.yue.demo.customview.TrendView;
-import com.yue.demo.util.DateUtils;
+import com.yue.demo.ui.view.customview.TrendView;
 
 public class WeatherActivity extends Activity implements Callback {
 	public final static String TAG = "Weather";

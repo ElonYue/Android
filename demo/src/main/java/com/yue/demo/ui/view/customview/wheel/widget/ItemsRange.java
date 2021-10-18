@@ -17,7 +17,7 @@
  *  limitations under the License.
  */
 
-package com.yue.demo.customview.wheel.widget;
+package com.yue.demo.ui.view.customview.wheel.widget;
 
 /**
  * Range for visible items.

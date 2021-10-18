@@ -1,0 +1,18 @@
+# compiler: R8
+# compiler_version: 2.2.66
+# pg_map_id: 751222a
+# common_typos_disable
+com.cy.model.Engineer -> com.cy.model.a:
+    11:11:void <init>() -> <init>
+    16:16:java.lang.String say() -> a
+    26:26:java.lang.String study() -> b
+    21:21:java.lang.String work() -> c
+com.cy.model.Student -> com.cy.model.b:
+    11:11:void <init>() -> <init>
+    14:14:java.lang.String say() -> a
+    24:24:java.lang.String study() -> b
+    19:19:java.lang.String work() -> c
+com.cy.obfuscate.test.MainActivity -> com.cy.obfuscate.test.MainActivity:
+    17:17:void <init>() -> <init>
+    26:37:void test() -> a
+    21:23:void onCreate(android.os.Bundle) -> onCreate
