@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#00ff00"
+    android:orientation="vertical">
+
+    <com.yue.demo.ui.view.customview.RoundRelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/hugh" />
+    </com.yue.demo.ui.view.customview.RoundRelativeLayout>
+
+    <com.yue.demo.ui.view.customview.RoundLinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        apps:round_corner="0dp"
+        apps:stroke_color="#ff0000"
+        apps:stroke_width="2dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/hugh" />
+    </com.yue.demo.ui.view.customview.RoundLinearLayout>
+</LinearLayout>
